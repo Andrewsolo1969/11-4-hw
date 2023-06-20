@@ -14,6 +14,18 @@
 
 Итогом выполнения домашнего задания будет приложенный скриншот веб-интерфейса RabbitMQ.
 
+RabbitMQ установлен  -  apt-get install rabbitmq-server -y --fix-missing
+
+и запущен - systemctl status rabbitmq-server
+
+
+![RabbitMQ_started.PNG](https://github.com/Andrewsolo1969/11-4-hw/blob/master/img/RabbitMQ_started.PNG)
+
+
+скриншот веб-интерфейса RabbitMQ
+
+
+![RabbitMQ_web.PNG](https://github.com/Andrewsolo1969/11-4-hw/blob/master/img/RabbitMQ_web.PNG)
 
 
 ## Задание 2. Отправка и получение сообщений
