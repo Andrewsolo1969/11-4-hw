@@ -62,7 +62,7 @@ RabbitMQ установлен  -  apt-get install rabbitmq-server -y --fix-missi
 
 ![consumer_Andrew_started.PNG](https://github.com/Andrewsolo1969/11-4-hw/blob/master/img/consumer_Andrew_started.PNG)
 
-![consumer_Andrew_resieved.PNG](https://github.com/Andrewsolo1969/11-4-hw/blob/master/img/consumer_Andrew_resieved.PNG)
+![consumer_Andrew_recieved.PNG](https://github.com/Andrewsolo1969/11-4-hw/blob/master/img/consumer_Andrew_resieved.PNG)
 
 
 
