@@ -87,7 +87,7 @@ Cкриншоты из веб-интерфейса с информацией о 
 ![HA.PNG](https://github.com/Andrewsolo1969/11-4-hw/blob/master/img/HA.PNG)
 
 
-Также приложите вывод команды с двух нод:  rabbitmqctl cluster_status
+Вывод команды с двух нод:  rabbitmqctl cluster_status
 
 Нода Mint1
 
