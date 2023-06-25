@@ -62,26 +62,36 @@ RabbitMQ установлен  -  apt-get install rabbitmq-server -y --fix-missi
 
 ![consumer_Andrew_started.PNG](https://github.com/Andrewsolo1969/11-4-hw/blob/master/img/consumer_Andrew_started.PNG)
 
-![consumer_Andrew_recieved.PNG](https://github.com/Andrewsolo1969/11-4-hw/blob/master/img/consumer_Andrew_resieved.PNG)
+![consumer_Andrew_recieved.PNG](https://github.com/Andrewsolo1969/11-4-hw/blob/master/img/consumer_Andrew_recieved.PNG)
 
 
 
 ## Задание 3. Подготовка HA кластера
 
-Используя Vagrant или VirtualBox, создайте вторую виртуальную машину и установите RabbitMQ. Добавьте в файл hosts название и IP-адрес каждой машины, чтобы машины могли видеть друг друга по имени.
+Используя Vagrant или VirtualBox, создайте вторую виртуальную машину и установите RabbitMQ. Добавьте в файл hosts название и IP-адрес каждой машины, чтобы машины могли видеть друг друга по имени. 
 
+Ноды созданы на Ubuntu 22.04 LTS Linux Mint - первая машина Mint1, вторая - Mint2.
 
-![RabbitMQ_web.PNG](https://github.com/Andrewsolo1969/11-4-hw/blob/master/img/RabbitMQ_web.PNG)
+![Hosts.PNG](https://github.com/Andrewsolo1969/11-4-hw/blob/master/img/Hosts.PNG)
 
+![Status.PNG](https://github.com/Andrewsolo1969/11-4-hw/blob/master/img/Status.PNG)
 
-После этого ваши машины могут пинговаться по имени.
+Создана политика ha-all на все очереди:
 
-Затем объедините две машины в кластер и создайте политику ha-all на все очереди.
+![Policy.PNG](https://github.com/Andrewsolo1969/11-4-hw/blob/master/img/Policy.PNG)
 
-В качестве решения домашнего задания приложите скриншоты из веб-интерфейса с информацией о доступных нодах в кластере и включённой политикой.
+Cкриншоты из веб-интерфейса с информацией о доступных нодах в кластере и включённой политикой:
+
+![Cluster.PNG](https://github.com/Andrewsolo1969/11-4-hw/blob/master/img/Cluster.PNG)
+
+![HA.PNG](https://github.com/Andrewsolo1969/11-4-hw/blob/master/img/HA.PNG)
+
 
 Также приложите вывод команды с двух нод:  rabbitmqctl cluster_status
 
+Нода Mint1
+
+![Status_Mint1.PNG](https://github.com/Andrewsolo1969/11-4-hw/blob/master/img/Status_Mint1.PNG)
 
 ![RabbitMQ_web.PNG](https://github.com/Andrewsolo1969/11-4-hw/blob/master/img/RabbitMQ_web.PNG)
 
