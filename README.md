@@ -28,6 +28,8 @@ RabbitMQ установлен  -  apt-get install rabbitmq-server -y --fix-missi
 ![RabbitMQ_web.PNG](https://github.com/Andrewsolo1969/11-4-hw/blob/master/img/RabbitMQ_web.PNG)
 
 
+
+
 ## Задание 2. Отправка и получение сообщений
 
 Используя приложенные скрипты, проведите тестовую отправку и получение сообщения. Для отправки сообщений необходимо запустить скрипт producer.py.
@@ -51,18 +53,26 @@ RabbitMQ установлен  -  apt-get install rabbitmq-server -y --fix-missi
 ![consumer_start.PNG](https://github.com/Andrewsolo1969/11-4-hw/blob/master/img/consumer_start.PNG)
 
 
-Для закрепления материала можете попробовать модифицировать скрипты, чтобы поменять название очереди и отправляемое сообщение.
-
+Для закрепления материала можете попробовать модифицировать скрипты, чтобы поменять название очереди и отправляемое сообщение -
+producer изменен:
 
 ![producer_Andrew.PNG](https://github.com/Andrewsolo1969/11-4-hw/blob/master/img/producer_Andrew.PNG)
 
+Две очереди - Andrew и hello:
+
 ![queue_Andrew.PNG](https://github.com/Andrewsolo1969/11-4-hw/blob/master/img/queue_Andrew.PNG)
 
+Consumer изменен - очередь Andrew:
+
 ![consumer_Andrew.PNG](https://github.com/Andrewsolo1969/11-4-hw/blob/master/img/consumer_Andrew.PNG)
+
+Результат работы consumer:
 
 ![consumer_Andrew_started.PNG](https://github.com/Andrewsolo1969/11-4-hw/blob/master/img/consumer_Andrew_started.PNG)
 
 ![consumer_Andrew_recieved.PNG](https://github.com/Andrewsolo1969/11-4-hw/blob/master/img/consumer_Andrew_recieved.PNG)
+
+
 
 
 
@@ -87,9 +97,8 @@ Cкриншоты из веб-интерфейса с информацией о 
 ![HA.PNG](https://github.com/Andrewsolo1969/11-4-hw/blob/master/img/HA.PNG)
 
 
-Также приложите вывод команды с двух нод:  rabbitmqctl cluster_status
+Вывод команды с двух нод:  rabbitmqctl cluster_status
 
-Нода Mint1
 
 ![Status_Mint1.PNG](https://github.com/Andrewsolo1969/11-4-hw/blob/master/img/Status_Mint1.PNG)
 
@@ -97,6 +106,10 @@ Cкриншоты из веб-интерфейса с информацией о 
 
 
 Для закрепления материала снова запустите скрипт producer.py и приложите скриншот выполнения команды на каждой из нод:  rabbitmqadmin get queue='hello'
+
+![RabbitMQ_web.PNG](https://github.com/Andrewsolo1969/11-4-hw/blob/master/img/RabbitMQ_web.PNG)
+
+![RabbitMQ_web.PNG](https://github.com/Andrewsolo1969/11-4-hw/blob/master/img/RabbitMQ_web.PNG)
 
 После чего попробуйте отключить одну из нод, желательно ту, к которой подключались из скрипта, затем поправьте параметры подключения в скрипте consumer.py на вторую ноду и запустите его.
 
