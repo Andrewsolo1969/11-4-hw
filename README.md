@@ -102,8 +102,6 @@ Cкриншоты из веб-интерфейса с информацией о 
 
 ![Status_Mint1.PNG](https://github.com/Andrewsolo1969/11-4-hw/blob/master/img/Status_Mint1.PNG)
 
-![RabbitMQ_web.PNG](https://github.com/Andrewsolo1969/11-4-hw/blob/master/img/RabbitMQ_web.PNG)
-
 
 Для закрепления материала снова запустите скрипт producer.py и приложите скриншот выполнения команды на каждой из нод:  rabbitmqadmin get queue='hello'
 
@@ -119,6 +117,8 @@ Cкриншоты из веб-интерфейса с информацией о 
 
 
 Cкриншот результата работы второго скрипта.
+
+![consumer_2.PNG](https://github.com/Andrewsolo1969/11-4-hw/blob/master/img/consumer_2.PNG)
 
 ![Consumer_node_stop.PNG](https://github.com/Andrewsolo1969/11-4-hw/blob/master/img/Consumer_node_stop.PNG)
 
