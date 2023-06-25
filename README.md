@@ -107,13 +107,24 @@ Cкриншоты из веб-интерфейса с информацией о 
 
 Для закрепления материала снова запустите скрипт producer.py и приложите скриншот выполнения команды на каждой из нод:  rabbitmqadmin get queue='hello'
 
-![RabbitMQ_web.PNG](https://github.com/Andrewsolo1969/11-4-hw/blob/master/img/RabbitMQ_web.PNG)
 
-![RabbitMQ_web.PNG](https://github.com/Andrewsolo1969/11-4-hw/blob/master/img/RabbitMQ_web.PNG)
+![rabbitmqadmin_Mint1.PNG](https://github.com/Andrewsolo1969/11-4-hw/blob/master/img/rabbitmqadmin_Mint1.PNG)
+
 
 После чего попробуйте отключить одну из нод, желательно ту, к которой подключались из скрипта, затем поправьте параметры подключения в скрипте consumer.py на вторую ноду и запустите его.
 
-Приложите скриншот результата работы второго скрипта.
+Нода отключена 
+
+![Node_stop.PNG](https://github.com/Andrewsolo1969/11-4-hw/blob/master/img/Node_stop.PNG)
+
+
+Cкриншот результата работы второго скрипта.
+
+![Consumer_node_stop.PNG](https://github.com/Andrewsolo1969/11-4-hw/blob/master/img/Consumer_node_stop.PNG)
+
+
+
+
 
 
 
